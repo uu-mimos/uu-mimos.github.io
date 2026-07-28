@@ -87,7 +87,7 @@ h1,h2,h3{ font-family:"Schibsted Grotesk",sans-serif; line-height:1.12; letter-s
 .hero{ padding:96px 0 104px; border-bottom:1px solid var(--line); }
 .hero-inner{ max-width:780px; }
 .hero h1{ font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; margin:.9rem 0 1.2rem; }
-.hero .lede{ font-size:1.1rem; color:var(--muted); max-width:52ch; }
+.hero .lede{ font-size:1.1rem; color:var(--muted); max-width:68ch; }
 .hero-cta{ display:flex; gap:12px; margin-top:1.7rem; flex-wrap:wrap; }
 .hero-meta{
   margin-top:1.3rem; font-family:"IBM Plex Mono",monospace;
@@ -108,7 +108,9 @@ section+section{ border-top:1px solid var(--line); }
 
 /* toolchain */
 .chain{
-  display:grid; grid-template-columns:repeat(5,1fr); gap:14px;
+  max-width:1400px; margin:0 auto;
+  padding:64px 32px;
+  display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
 }
 .step{
   background:#FFFFFF;
@@ -205,4 +207,4 @@ section.tight{ padding-top:30px; }
 
 
 .hl-comp { color: #2f7d5a; }  
-.hl-det  { color: #1f5fa8; } 
+.hl-det  { color: #1f5fa8; }

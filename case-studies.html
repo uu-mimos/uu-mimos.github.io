@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Case studies — MIMOS-Tools</title>
+<meta name="description" content="MIMOS-Tools exercised on avionics, railway, and automotive control systems." />
+
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="%230A1615"/><rect x="6" y="13" width="13" height="7" fill="%2319C2AC"/><polygon points="21,21 29,21 25,13" fill="%23F5A83C"/></svg>' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark" href="index.html"><span class="glyph" aria-hidden="true"></span>MIMOS-Tools</a>
+    <nav aria-label="Primary">
+      <a href="index.html">Overview</a>
+      <a href="download.html">Download</a>
+      <a href="case-studies.html" class="active">Case studies</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Case studies</p>
+    <h1>Exercised on real control systems</h1>
+    <p class="lede">Three systems from three domains, each taken through the full MIMOS-Tools flow — modeled, simulated, verified, scheduled, and, for two of them, analyzed for end-to-end latency — and bundled as runnable examples in every release.</p>
+  </div>
+</div>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="cases">
+      <div class="case">
+        <span class="tag">Avionics</span>
+        <h3>ROSACE flight controller</h3>
+        <p>A 13-task, four-rate longitudinal flight controller from industrial avionics. End-to-end latency analysis confirms the full sense-to-actuate control chain meets its 5&nbsp;ms deadline every 20&nbsp;ms.</p>
+      </div>
+      <div class="case">
+        <span class="tag">Railway</span>
+        <h3>Train crossing controller</h3>
+        <p>A classic infinite-state formal-verification benchmark. Exhaustive state-space exploration reduces it to a 158-state automaton and turns up a real liveness bug: a stopped train that can wait forever for a green signal.</p>
+      </div>
+      <div class="case">
+        <span class="tag">Automotive</span>
+        <h3>Autonomous-driving perception pipeline</h3>
+        <p>A six-task object-detection pipeline with a dual-path structure — a high-priority region-of-interest path feeding control, and a lower-rate full-scene path for context — scheduled across four cores under Global EDF.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© 2026 The MIMOS-Tools authors</span>
+    <span class="right">built on MIMOS</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

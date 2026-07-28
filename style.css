@@ -202,3 +202,7 @@ section.tight{ padding-top:30px; }
 }
 .dl-card .dl-meta{ font-family:"IBM Plex Mono",monospace; font-size:.78rem; color:var(--muted); }
 .dl-card .right-link{ margin-left:auto; font-size:.9rem; }
+
+
+.hl-comp { color: #2f7d5a; }  
+.hl-det  { color: #1f5fa8; } 

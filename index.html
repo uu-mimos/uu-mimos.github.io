@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MIMOS-Tools — deterministic by construction</title>
+<title>MIMOS-Tools — composable and deterministic by construction</title>
 <meta name="description" content="MIMOS-Tools is a toolchain for modeling, simulating, verifying, analyzing, and generating code for embedded systems." />
 
 <!-- ============================================================
@@ -35,7 +35,7 @@
 <div class="hero">
   <div class="wrap hero-inner">
     <p class="eyebrow">Embedded systems toolchain</p>
-    <h1>MIMOS-Tools — deterministic by construction</h1>
+    <h1>MIMOS-Tools — <span class="hl-comp">composable</span> and <span class="hl-det">deterministic</span> by construction</h1>
     <p class="lede">
       An integrated toolchain for embedded systems, grounded end to end
       in a single deterministic model of computation: <strong>MIMOS</strong>.
@@ -55,42 +55,33 @@
 </div>
 
 <!-- ================= TOOLCHAIN ================= -->
-<section id="toolchain">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Toolchain</p>
-      <h2>From model to deployed code, one semantics all the way down</h2>
-      <p>Five stages share the same MIMOS model of computation, so what you simulate is what you verify — and what you verify is what runs.</p>
-    </div>
-    <div class="chain">
-      <div class="step">
-        <span class="n">stage 1</span>
-        <h3>Model</h3>
-        <p>Describe the system as a MIMOS network: real-time tasks connected by asynchronous FIFO and register channels.</p>
-      </div>
-      <div class="step">
-        <span class="n">stage 2</span>
-        <h3>Simulate</h3>
-        <p>Execute step by step to get a deterministic trajectory. A run is reproducible bit-for-bit.</p>
-      </div>
-      <div class="step">
-        <span class="n">stage 3</span>
-        <h3>Verify</h3>
-        <p>Check deadlock- and overflow-freedom by static analysis. Verify functional properties by exhaustive state-space exploration.</p>
-      </div>
-      <div class="step">
-        <span class="n">stage 4</span>
-        <h3>Analyze</h3>
-        <p>Map verified components to real-time tasks and check schedulability for multicore platforms. Worst-case end-to-end latency along source-sink paths.</p>
-      </div>
-      <div class="step">
-        <span class="n">stage 5</span>
-        <h3>Generate</h3>
-        <p>Generate multicore deployment code that preserves the model's semantics and respects the timing constraints verified in the earlier stages.</p>
-      </div>
-    </div>
+<div class="chain">
+  <div class="step">
+    <span class="n">stage 1</span>
+    <h3>Modelling</h3>
+    <p>Describe the system as a MIMOS network: real-time tasks connected by asynchronous FIFO and register channels.</p>
   </div>
-</section>
+  <div class="step">
+    <span class="n">stage 2</span>
+    <h3>Simulation</h3>
+    <p>Execute step by step to get a deterministic trajectory. A run is reproducible bit-for-bit.</p>
+  </div>
+  <div class="step">
+    <span class="n">stage 3</span>
+    <h3>Verification</h3>
+    <p>Check deadlock- and overflow-freedom by static analysis. Verify functional properties by exhaustive state-space exploration.</p>
+  </div>
+  <div class="step">
+    <span class="n">stage 4</span>
+    <h3>Analysis</h3>
+    <p>Map verified components to real-time tasks and check schedulability for multicore platforms. Worst-case end-to-end latency along source-sink paths.</p>
+  </div>
+  <div class="step">
+    <span class="n">stage 5</span>
+    <h3>Synthesis</h3>
+    <p>Synthesize multicore deployment code that preserves the model's semantics and respects the timing constraints verified in the earlier stages.</p>
+  </div>
+</div>
 
 <!-- ================= LICENSE & CONTACT ================= -->
 <section id="license">

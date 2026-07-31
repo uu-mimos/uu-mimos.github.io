@@ -84,13 +84,13 @@ h1,h2,h3{ font-family:"Schibsted Grotesk",sans-serif; line-height:1.12; letter-s
 .btn-sm{ padding:.42rem .85rem; font-size:.84rem; }
 
 /* ---------- hero ---------- */
-.hero{ padding:96px 0 104px; border-bottom:1px solid var(--line); }
-.hero-inner{ max-width:780px; }
-.hero h1{ font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; margin:.9rem 0 1.2rem; }
-.hero .lede{ font-size:1.1rem; color:var(--muted); max-width:68ch; }
-.hero-cta{ display:flex; gap:12px; margin-top:1.7rem; flex-wrap:wrap; }
+.hero{ padding:88px 0 96px; border-bottom:1px solid var(--line); text-align:center; }
+.hero-inner{ max-width:820px; margin:0 auto; }
+.hero h1{ font-size:clamp(2.2rem,4.4vw,3rem); font-weight:800; margin:.9rem 0 1.2rem; }
+.hero .lede{ font-size:1.06rem; color:var(--muted); max-width:60ch; margin:0 auto; text-wrap:balance; }
+.hero-cta{ display:flex; gap:12px; margin-top:1.8rem; flex-wrap:wrap; justify-content:center; }
 .hero-meta{
-  margin-top:1.3rem; font-family:"IBM Plex Mono",monospace;
+  margin-top:1.4rem; font-family:"IBM Plex Mono",monospace;
   font-size:.75rem; color:var(--muted);
 }
 .hero-meta span+span::before{ content:"·"; margin:0 .6em; color:var(--line); }
@@ -108,15 +108,23 @@ section+section{ border-top:1px solid var(--line); }
 
 /* toolchain */
 .chain{
-  max-width:1400px; margin:0 auto;
-  padding:64px 32px;
   display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
 }
 .step{
+  position:relative;
   background:#FFFFFF;
   border:1px solid var(--line); border-radius:var(--radius);
   padding:18px 16px 20px;
   display:flex; flex-direction:column; gap:.5rem;
+}
+@media (min-width:961px){
+  .step:not(:last-child)::after{
+    content:""; position:absolute; top:50%; right:-14px;
+    width:8px; height:8px; margin-top:-5px;
+    border-top:2px solid var(--trace-deep);
+    border-right:2px solid var(--trace-deep);
+    transform:rotate(45deg);
+  }
 }
 .step .n{
   font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--trace-deep);
@@ -206,5 +214,5 @@ section.tight{ padding-top:30px; }
 .dl-card .right-link{ margin-left:auto; font-size:.9rem; }
 
 
-.hl-comp { color: #2f7d5a; }  
-.hl-det  { color: #1f5fa8; }
+.hl-comp { color: var(--trace-deep); }
+.hl-det  { color: #B05A00; }
